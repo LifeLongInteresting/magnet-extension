@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "磁力链接补全",
+  "version": "1.0",
+  "description": "右键选中网页文本，一键补全 magnet:?xt=urn:btih: 开头并复制到剪贴板",
+  "icons": {
+    "16": "Magnet.png",
+    "32": "Magnet.png",
+    "48": "Magnet.png",
+    "128": "Magnet.png"
+  },
+  "action": {
+    "default_icon": "Magnet.png",
+    "default_title": "磁力链接补全"
+  },
+  "permissions": ["contextMenus", "clipboardWrite", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
